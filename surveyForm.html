@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">a</h1>
+    <p id="description">aaa</p>
+    <form id="survey-form">
+      <label id="name-label" for="name" type="text">name: <input id="name" type="text" placeholder="your name" required /> </label>
+
+      <label id="number-label" for="number" type="text">age: <input id="number" type="number" placeholder="your age" min=1 max=420 required /> </label>
+
+      <label id="email-label" for="email" type="text">email: <input id="email" type="email" placeholder="your email" required /> </label>
+
+      <p class="pickone">pick one <select id="dropdown">
+        <option value="">(not this one though)</option>
+        <option value="1">aaaaa</option>
+        <option value="2">b</option>
+        <option value="3">c</option>
+        <option value="4">d</option>
+        <option value="5">h</option>
+        <option value="6">E</option>
+        <option value="7">z</option>
+        </select> </p>
+        <p class="pickone">Pick a number(s)</p>
+        <label class="ch">
+          <input name="box" type="checkbox" class="input-checkbox" value="1" >
+          1
+        </label>
+        <label class="ch">
+          <input name="box" type="checkbox" class="input-checkbox" value="2" >
+          2
+        </label>
+        <label class="ch">
+          <input name="box" type="checkbox" class="input-checkbox" value="3" >
+          3
+        </label>
+        <label class="ch">
+          <input name="box" type="checkbox" class="input-checkbox" value="4">
+          4
+        </label>
+         <label class="ch">
+          <input name="box" type="checkbox" class="input-checkbox" value="5" >
+          sorry
+        </label>
+        <p class="reccommendation">How would you describe your feelings towards website design?</p>
+        <label>
+          <input name="feedback" value="yes" type="radio">
+          yes
+        </label>
+        <label>
+          <input name="feedback" value="no" type="radio">
+          no
+        </label>
+
+        <p>Comments or suggestions?</p>
+        <textarea id="comments" placeholder="Your feedback here"></textarea>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
