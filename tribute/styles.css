@@ -1,0 +1,12 @@
+body {
+  background-color:#abe0ff;
+  font-family: Verdana;
+
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
