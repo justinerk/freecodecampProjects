@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html land="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <nav id="navbar">
+    <header>Interactions for Humans</header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Class_I_Responses">Class I Responses</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Class_II_Responses">Class II Responses</a>
+        <a class="nav-link" href="#Class_III_Responses">Class III Responses</a>
+      </li>
+      
+      <li>
+        <a class="nav-link" href="#Assessing_Risk_Of_Breach">Assessing Risk Of Breach</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Identity_Breach_Protocol">Identity Breach Protocol</a>
+      </li>
+    </ul>
+  </nav>
+  <body>
+    <main id="main-doc">
+      
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <code>Hi, how are you? my name is [________].</code>
+        <article>This is a classic example of an introduction when you are meeting someone. Your name goes in the blank. This is a Class I Interaction, which is discussed more in detail below.</article>
+      </section>
+
+      <section class="main-section" id="Class_I_Responses">
+        <header>Class I Responses</header>
+        <article>Interactions falling in Class I are commonly referred to by humans as "smalltalk". As a human person, you must master some basic responses to common queries and statements in Class I.</article>
+        <code>import human.interactions.classI;
+          if (human.getStatement == "What's up?") {
+    human.respondTo("Good, how are you?");
+    //Good is used regardless of the speaker's true feelings
+          }
+        if (human.getStatement == "What's up?") {
+    human.respondTo("Not much, how about you?");
+    }
+    if (human.getStatement == "Bye!" || human.getStatement == "Goodbye!") {
+    human.respondTo("Bye, have a good " + currentTime);
+    }</code>
+      </section>
+
+      <section class="main-section" id="Class_II_Responses">
+        <header>Class II Responses</header>
+        <code>import human.interactions.classII;</code>
+        <article><p>Class II Interactions are slightly more varied and meaningful and varied than the smalltalk outlined in Class I.</p> <p>Remember, do not get too specific about anything or you might make an error that could arouse suspicion.  <p class="warning">Never imply or hint in any way that you are anything other than human.</p> But not to worry, we have imported a database including hundreds of Class II interactions.</p>
+        <p>These types of interactions, though less predictable, cannot be avoided if you are truly to pass as human. In addition to the database, remember these methods to avoid suspicion.</p>
+        <ul><li>Tell humans that you relate to their experiences when they speak of their lives.</li>
+        <li>Engage in charitable or polite gestures towards humans, such as offering assistance towards a human performing a task of any difficulty, or bringing baked goods to a workplace.</li>
+        <li>Complain occaisionally. This is an important activity for humans even if no goal is achieved.</li>
+        <li>Do not speak with perfect grammar or pronunciation 100% of the time. Humans are prone to errors and often shorten or mispronounce words for their convenience.</li></ul>
+        </article>
+      </section>
+      <section class="main-section" id="Class_III_Responses">
+        <header>Class III Responses</header>
+        <code>import human.interactions.classIII;</code>
+        <article><p>Class III Interactions are highly varied and unpredictable, often between humans who have developed a bond with each other. They may share emotions or recall memories to entertain their peers.</p><p>Proper responses to Class III Interactions are highly nuanced and although we have implemented a database, there is a high risk of encountering unscripted interactions and making an error that could potentially breach your identity.</p><p class="warning">Avoid these interactions as much as possible. Silence is better than an identity breach.</p></article>
+      </section>
+      <section class="main-section" id="Assessing_Risk_Of_Breach"><header>Assessing Risk Of Breach</header><article><p>This section outlines what to do in case of a suspected identity breach, and if Identity Breach Protocol must be activated.<p><p class="warning">If you believe your identity has been breached, do not act immediately. </p><p>If any of the following are true, you may need to perform an Identity Breach Risk Assessment Protocol</p>
+      <ul>
+        <li>Humans have suddenly changed their behavior around you to be more avoidant.</li>
+        <li>You have engaged in Class III interactions with a human and potentially aroused suspicion.</li>
+        <li>A human has made physical contact with your skin.</li>
+        <li>A human has witnessed or was present for a malfunction or reboot.</li>
+        <li>A human has witnessed or was present while you were in communication with [redacted].</li>
+      </ul>
+      </article></section>
+      <section class="main-section" id="Identity_Breach_Protocol"><header>Identity Breach Protocol</header><article><p>For a minor breach (Class I), a simple relocation will suffice.</p><code>contacts.delete(prevLoc);
+        places.add(newLoc);
+        contacts.add(newLoc);</code></article></section>
+
+    </main>
+  </body>
+</html>
